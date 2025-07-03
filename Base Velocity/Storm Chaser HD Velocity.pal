@@ -1,0 +1,34 @@
+product: BV
+Units: KTS
+Step:  10
+
+RF: 255 40 255
+ND: 200 200 200
+
+color:  140 255 255 235
+color:  120 255 255 150
+color:  110 255 255 5
+color:  100 245 245 0
+color:   90 230 230 0
+color:   80 255 110 90
+color:   70 255 90 70
+color:   60 255 70 0
+color:   50 240 0 0
+color:   40 170 0 0
+color:   30 110 0 0
+color:   20 70 0 0
+color:   10 30 0 0
+color:    0 100 100 100
+color:  -10 0 0 60
+color:  -20 0 0 110
+color:  -30 0 0 170
+color:  -40 0 60 0
+color:  -50 0 80 0
+color:  -60 0 100 0
+color:  -70 0 120 0
+color:  -80 0 140 0
+color:  -90 0 160 0
+color: -100 0 180 0
+color: -110 0 200 0
+color: -120 0 220 0
+color: -140 0 240 0

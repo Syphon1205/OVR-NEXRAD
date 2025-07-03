@@ -1,0 +1,39 @@
+;
+; inspired by TLX velocity 5/24/11
+;
+Product: BV
+Units: KTS
+Step:  10
+Scale:   1.9426     ; converts internal units (M/S) to KTS
+
+ND: 64 64 64 
+RF: 64 0 64 
+
+
+;  The Color statements above produce a palette equivalent to the
+;   statements below. The axis labels start at the minimum value
+;   from the Color: statements and progress in Step: increments
+;   to the maximum value from the Color: statements.
+;
+;
+Color: 100 250 125 0
+Color: 90 250 150 0
+Color: 80 250 175 100
+Color: 70 250 200 200
+Color: 60 250 125 125
+Color: 50 240 75 125
+Color: 40 240 0 75
+Color: 30 180 0 0
+Color: 20 150 0 0
+Color: 10 120 0 0
+Color: 0 120 120 120
+Color: -10 0 120 0
+Color: -20 0 150 0
+Color: -30 0 180 0
+Color: -40 0 210 150
+Color: -50 0 210 200
+Color: -60 0 125 150
+Color: -70 0 0 100
+Color: -80 150 0 150
+Color: -90 200 0 200
+Color: -100 250 0 250

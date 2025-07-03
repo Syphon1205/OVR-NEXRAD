@@ -1,0 +1,1419 @@
+# This file is intentionally left blank after cleanup.
+
+--- Crash Report: 2025-07-02T01:42:28.819390 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1461, in <module>
+    window = MainWindow()
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 537, in __init__
+    self.init_ui()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 770, in init_ui
+    self.update_palette_selector("reflectivity")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1025, in update_palette_selector
+    is_level3 = self.level_selector.currentText() == "Level 3"
+                ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'level_selector'. Did you mean: 'model_selector'?
+
+--- Crash Report: 2025-07-02T04:04:45.081520 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 2025, in <module>
+    window = MainWindow()
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 853, in __init__
+    self.show_loading_screen("Loading initial radar data...")
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 894, in show_loading_screen
+    self.loading_dialog.setLabel(label_widget)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+TypeError: setLabel(self, label: Optional[QLabel]): argument 1 has unexpected type 'QWidget'
+
+--- Crash Report: 2025-07-02T04:12:42.621200 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 2033, in <module>
+    window = MainWindow()
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 853, in __init__
+    self.show_loading_screen("Loading initial radar data...")
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 894, in show_loading_screen
+    self.loading_dialog.setLabel(label_widget)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+TypeError: setLabel(self, label: Optional[QLabel]): argument 1 has unexpected type 'QWidget'
+
+--- Crash Report: 2025-07-02T04:31:03.846794 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1327, in check_for_new_sweep
+    self.load_recent_level2_frames()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1095, in load_recent_level2_frames
+    self._radar_loader_thread = QThread()
+                                ^^^^^^^
+NameError: name 'QThread' is not defined
+
+--- Crash Report: 2025-07-02T04:32:03.845449 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1327, in check_for_new_sweep
+    self.load_recent_level3_frames()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1095, in load_recent_level2_frames
+    self._radar_loader_thread = QThread()
+                                ^^^^^^^
+NameError: name 'QThread' is not defined
+
+--- Crash Report: 2025-07-02T05:12:30.235482 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1770, in <module>
+    window = MainWindow()
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 395, in __init__
+    self.load_custom_palettes()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'load_custom_palettes'
+
+--- Crash Report: 2025-07-02T05:14:16.267295 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1727, in <module>
+    window = MainWindow()
+             ^^^^^^^^^^
+NameError: name 'MainWindow' is not defined. Did you mean: 'QMainWindow'?
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/TLX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/TLX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/TLX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/TLX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/TLX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/TLX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/TLX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/TLX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/TLX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/TLX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/TLX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/TLX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/OKC/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/OKC/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/OKC/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/OKC/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/OKC/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/OKC/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/OKC/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/OKC/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/OKC/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/OKC/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/OKC/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/OKC/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/DAA/OKC/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/DAA/OKC/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/DAA/OKC/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/DAA/OKC/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0C/OKC/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0C/OKC/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0C/OKC/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0C/OKC/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/FDR/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/FDR/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/FDR/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/FDR/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/FDR/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/FDR/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/FDR/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/FDR/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/FDR/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/FDR/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/FDR/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/FDR/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/INX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/INX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/INX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/INX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/INX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/INX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/INX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/INX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/INX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/INX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/INX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/INX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/VNX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/VNX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/VNX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/VNX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/VNX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/VNX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/VNX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/VNX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/VNX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/VNX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/VNX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/VNX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/AMA/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/AMA/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/AMA/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/AMA/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/AMA/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/AMA/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/AMA/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/AMA/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/AMA/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/AMA/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/AMA/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/AMA/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/DDC/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/DDC/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/DDC/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/DDC/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/DDC/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/DDC/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/DDC/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/DDC/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/DDC/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/DDC/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/DDC/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/DDC/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/ICT/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/ICT/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/ICT/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/ICT/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/ICT/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/ICT/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/ICT/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/ICT/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/ICT/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/ICT/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/ICT/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/ICT/20250701/catalog.xml
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/ICT/20250702/Level3_ICT_DAA_20250702_0950.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/ICT/20250702/Level3_ICT_DAA_20250702_0959.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/ICT/20250702/Level3_ICT_DAA_20250702_1008.nids: 
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/SGF/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/SGF/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/SGF/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/SGF/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/SGF/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/SGF/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/SGF/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/SGF/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/SGF/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/SGF/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/SGF/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/SGF/20250701/catalog.xml
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/SGF/20250702/Level3_SGF_DAA_20250702_0956.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/SGF/20250702/Level3_SGF_DAA_20250702_1005.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/SGF/20250702/Level3_SGF_DAA_20250702_1014.nids: 
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/EAX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/EAX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/EAX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/EAX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/EAX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/EAX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/EAX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/EAX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/EAX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/EAX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/EAX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/EAX/20250701/catalog.xml
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/EAX/20250702/Level3_EAX_DAA_20250702_1004.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/EAX/20250702/Level3_EAX_DAA_20250702_1011.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/EAX/20250702/Level3_EAX_DAA_20250702_1014.nids: 
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/FWS/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/FWS/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/FWS/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/FWS/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/FWS/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/FWS/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/FWS/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/FWS/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/FWS/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/FWS/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/FWS/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/FWS/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/GRK/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/GRK/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/GRK/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/GRK/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/GRK/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/GRK/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/GRK/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/GRK/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/GRK/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/GRK/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/GRK/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/GRK/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/EWX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/EWX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/EWX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/EWX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/EWX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/EWX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/EWX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/EWX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/EWX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/EWX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/EWX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/EWX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/HGX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/HGX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/HGX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/HGX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/HGX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/HGX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/HGX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/HGX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/HGX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/HGX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/HGX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/HGX/20250701/catalog.xml
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/HGX/20250702/Level3_HGX_DAA_20250702_1002.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/HGX/20250702/Level3_HGX_DAA_20250702_1009.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/HGX/20250702/Level3_HGX_DAA_20250702_1016.nids: 
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/CRP/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/CRP/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/CRP/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/CRP/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/CRP/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/CRP/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/CRP/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/CRP/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/CRP/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/CRP/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/CRP/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/CRP/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/BRO/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/BRO/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/BRO/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/BRO/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/BRO/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/BRO/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/BRO/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/BRO/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/BRO/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/BRO/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/BRO/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/BRO/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/MAF/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/MAF/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/MAF/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/MAF/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/MAF/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/MAF/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/MAF/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/MAF/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/MAF/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/MAF/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/MAF/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/MAF/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/LBB/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/LBB/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/LBB/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/LBB/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/LBB/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/LBB/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/LBB/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/LBB/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/LBB/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/LBB/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/LBB/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/LBB/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/DFX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/DFX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/DFX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/DFX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/DFX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/DFX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/DFX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/DFX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/DFX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/DFX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/DFX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/DFX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/EPZ/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/EPZ/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/EPZ/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/EPZ/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/EPZ/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/EPZ/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/EPZ/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/EPZ/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/EPZ/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/EPZ/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/EPZ/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/EPZ/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/ABX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/ABX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/ABX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/ABX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/ABX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/ABX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/ABX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/ABX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/ABX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/ABX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/ABX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/ABX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/FDX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/FDX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/FDX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/FDX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/FDX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/FDX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/FDX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/FDX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/FDX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/FDX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/FDX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/FDX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/HDX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/HDX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/HDX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/HDX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/HDX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/HDX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/HDX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/HDX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/HDX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/HDX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/HDX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/HDX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/PUX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/PUX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/PUX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/PUX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/PUX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/PUX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/PUX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/PUX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/PUX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/PUX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/PUX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/PUX/20250701/catalog.xml
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/PUX/20250702/Level3_PUX_DAA_20250702_1001.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/PUX/20250702/Level3_PUX_DAA_20250702_1008.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/PUX/20250702/Level3_PUX_DAA_20250702_1015.nids: 
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/GJX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/GJX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/GJX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/GJX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/GJX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/GJX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/GJX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/GJX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/GJX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/GJX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/GJX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/GJX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/FTG/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/FTG/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/FTG/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/FTG/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/FTG/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/FTG/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/FTG/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/FTG/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/FTG/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/FTG/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/FTG/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/FTG/20250701/catalog.xml
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/FTG/20250702/Level3_FTG_DAA_20250702_1005.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/FTG/20250702/Level3_FTG_DAA_20250702_1012.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/FTG/20250702/Level3_FTG_DAA_20250702_1019.nids: 
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/CYS/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/CYS/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/CYS/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/CYS/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/CYS/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/CYS/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/CYS/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/CYS/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/CYS/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/CYS/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/CYS/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/CYS/20250701/catalog.xml
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/CYS/20250702/Level3_CYS_DAA_20250702_0950.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/CYS/20250702/Level3_CYS_DAA_20250702_0959.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/CYS/20250702/Level3_CYS_DAA_20250702_1009.nids: 
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/RIW/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/RIW/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/RIW/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/RIW/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/RIW/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/RIW/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/RIW/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/RIW/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/RIW/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/RIW/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/RIW/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/RIW/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/BLX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/BLX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/BLX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/BLX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/BLX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/BLX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/BLX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/BLX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/BLX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/BLX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/BLX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/BLX/20250701/catalog.xml
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/BLX/20250702/Level3_BLX_DAA_20250702_0951.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/BLX/20250702/Level3_BLX_DAA_20250702_1000.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/BLX/20250702/Level3_BLX_DAA_20250702_1009.nids: 
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/GGW/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/GGW/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/GGW/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/GGW/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/GGW/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/GGW/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/GGW/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/GGW/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/GGW/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/GGW/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/GGW/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/GGW/20250701/catalog.xml
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GGW/20250702/Level3_GGW_DAA_20250702_1001.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GGW/20250702/Level3_GGW_DAA_20250702_1008.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GGW/20250702/Level3_GGW_DAA_20250702_1015.nids: 
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/TFX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/TFX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/TFX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/TFX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/TFX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/TFX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/TFX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/TFX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/TFX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/TFX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/TFX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/TFX/20250701/catalog.xml
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/TFX/20250702/Level3_TFX_DAA_20250702_0958.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/TFX/20250702/Level3_TFX_DAA_20250702_1006.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/TFX/20250702/Level3_TFX_DAA_20250702_1015.nids: 
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/MSX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/MSX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/MSX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/MSX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/MSX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/MSX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/MSX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/MSX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/MSX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/MSX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/MSX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/MSX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/SFX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/SFX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/SFX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/SFX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/SFX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/SFX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/SFX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/SFX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/SFX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/SFX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/SFX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/SFX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/BOI/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/BOI/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/BOI/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/BOI/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/BOI/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/BOI/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/BOI/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/BOI/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/BOI/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/BOI/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/BOI/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/BOI/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/DAA/BOI/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/DAA/BOI/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/DAA/BOI/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/DAA/BOI/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0C/BOI/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0C/BOI/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0C/BOI/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0C/BOI/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/MTX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/MTX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/MTX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0Q/MTX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/MTX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/MTX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/MTX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N0U/MTX/20250701/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/MTX/20250702/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/MTX/20250702/catalog.xml
+[THREDDS CATALOG ERROR] https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/MTX/20250701/catalog.xml: 404 Client Error: 404 for url: https://thredds.ucar.edu/thredds/catalog/nexrad/level3/N1P/MTX/20250701/catalog.xml
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/SGF/20250702/Level3_SGF_DAA_20250702_1014.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/ICT/20250702/Level3_ICT_DAA_20250702_1016.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/ICT/20250702/Level3_ICT_DAA_20250702_0959.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/SGF/20250702/Level3_SGF_DAA_20250702_1005.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/ICT/20250702/Level3_ICT_DAA_20250702_1008.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/SGF/20250702/Level3_SGF_DAA_20250702_1022.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/EAX/20250702/Level3_EAX_DAA_20250702_1018.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/EAX/20250702/Level3_EAX_DAA_20250702_1021.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/EAX/20250702/Level3_EAX_DAA_20250702_1025.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/HGX/20250702/Level3_HGX_DAA_20250702_1016.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/HGX/20250702/Level3_HGX_DAA_20250702_1009.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/HGX/20250702/Level3_HGX_DAA_20250702_1023.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/CRP/20250702/Level3_CRP_DAA_20250702_1025.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/CRP/20250702/Level3_CRP_DAA_20250702_1015.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/CRP/20250702/Level3_CRP_DAA_20250702_1020.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/CRP/20250702/Level3_CRP_N0C_20250702_1020.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/LBB/20250702/Level3_LBB_N0C_20250702_1021.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/EPZ/20250702/Level3_EPZ_DAA_20250702_1024.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/FDX/20250702/Level3_FDX_DAA_20250702_1019.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/PUX/20250702/Level3_PUX_DAA_20250702_1008.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/PUX/20250702/Level3_PUX_DAA_20250702_1022.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/PUX/20250702/Level3_PUX_DAA_20250702_1015.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/FTG/20250702/Level3_FTG_DAA_20250702_1012.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/FTG/20250702/Level3_FTG_DAA_20250702_1019.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/CYS/20250702/Level3_CYS_DAA_20250702_1009.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/CYS/20250702/Level3_CYS_DAA_20250702_1019.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/FTG/20250702/Level3_FTG_DAA_20250702_1026.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/CYS/20250702/Level3_CYS_DAA_20250702_0959.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/CYS/20250702/Level3_CYS_N0C_20250702_1028.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/BLX/20250702/Level3_BLX_DAA_20250702_1000.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/BLX/20250702/Level3_BLX_DAA_20250702_1017.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GGW/20250702/Level3_GGW_DAA_20250702_1008.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GGW/20250702/Level3_GGW_DAA_20250702_1015.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GGW/20250702/Level3_GGW_DAA_20250702_1022.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/BLX/20250702/Level3_BLX_DAA_20250702_1009.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/TFX/20250702/Level3_TFX_DAA_20250702_0958.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/TFX/20250702/Level3_TFX_DAA_20250702_1015.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/TFX/20250702/Level3_TFX_DAA_20250702_1006.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/TFX/20250702/Level3_TFX_N0C_20250702_1029.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/TFX/20250702/Level3_TFX_N0C_20250702_1024.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/ICX/20250702/Level3_ICX_N0C_20250702_1021.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/YUX/20250702/Level3_YUX_DAA_20250702_1020.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/NKX/20250702/Level3_NKX_DAA_20250702_1024.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/VTX/20250702/Level3_VTX_DAA_20250702_1009.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/VTX/20250702/Level3_VTX_DAA_20250702_1024.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/VTX/20250702/Level3_VTX_DAA_20250702_1016.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/HNX/20250701/Level3_HNX_DAA_20250701_1209.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/HNX/20250701/Level3_HNX_DAA_20250701_1219.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/DAX/20250702/Level3_DAX_DAA_20250702_1016.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/HNX/20250701/Level3_HNX_DAA_20250701_1228.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/DAX/20250702/Level3_DAX_DAA_20250702_1023.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/DAX/20250702/Level3_DAX_DAA_20250702_1009.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/BBX/20250702/Level3_BBX_DAA_20250702_1016.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/BBX/20250702/Level3_BBX_DAA_20250702_1021.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/BBX/20250702/Level3_BBX_DAA_20250702_1026.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/MUX/20250702/Level3_MUX_DAA_20250702_1001.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/MUX/20250702/Level3_MUX_DAA_20250702_1010.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/MAX/20250702/Level3_MAX_DAA_20250702_1017.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/MAX/20250702/Level3_MAX_DAA_20250702_0956.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/MUX/20250702/Level3_MUX_DAA_20250702_1018.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/MAX/20250702/Level3_MAX_DAA_20250702_1006.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/RTX/20250702/Level3_RTX_N0C_20250702_1020.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/ATX/20250702/Level3_ATX_DAA_20250702_1012.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/ATX/20250702/Level3_ATX_DAA_20250702_1005.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/ATX/20250702/Level3_ATX_DAA_20250702_1019.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/OTX/20250702/Level3_OTX_N0C_20250702_1022.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/OTX/20250702/Level3_OTX_N0C_20250702_1029.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/HTX/20250701/Level3_HTX_N0C_20250701_2107.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GWX/20250702/Level3_GWX_DAA_20250702_1007.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GWX/20250702/Level3_GWX_DAA_20250702_1021.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GWX/20250702/Level3_GWX_DAA_20250702_1014.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/BMX/20250702/Level3_BMX_DAA_20250702_1025.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/BMX/20250702/Level3_BMX_DAA_20250702_1008.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/BMX/20250702/Level3_BMX_DAA_20250702_1016.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/BMX/20250702/Level3_BMX_N0C_20250702_1008.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/JGX/20250702/Level3_JGX_DAA_20250702_1010.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/FFC/20250702/Level3_FFC_DAA_20250702_1017.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/JGX/20250702/Level3_JGX_DAA_20250702_1017.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/FFC/20250702/Level3_FFC_DAA_20250702_1024.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/JGX/20250702/Level3_JGX_DAA_20250702_1023.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/FFC/20250702/Level3_FFC_DAA_20250702_1010.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/VAX/20250702/Level3_VAX_N0C_20250702_1020.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/BYX/20250702/Level3_BYX_DAA_20250702_1022.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/MOB/20250702/Level3_MOB_DAA_20250702_1018.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/POE/20250702/Level3_POE_DAA_20250702_1020.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/POE/20250702/Level3_POE_DAA_20250702_1013.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/POE/20250702/Level3_POE_DAA_20250702_1027.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/SHV/20250702/Level3_SHV_DAA_20250702_1003.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/SHV/20250702/Level3_SHV_DAA_20250702_1012.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/SHV/20250702/Level3_SHV_DAA_20250702_1021.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/LZK/20250702/Level3_LZK_DAA_20250702_1026.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/LZK/20250702/Level3_LZK_DAA_20250702_1012.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/LZK/20250702/Level3_LZK_DAA_20250702_1019.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/SRX/20250702/Level3_SRX_N0C_20250702_1025.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/SRX/20250702/Level3_SRX_N0C_20250702_1029.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/PAH/20250702/Level3_PAH_DAA_20250702_1006.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/HPX/20250702/Level3_HPX_DAA_20250702_1012.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/HPX/20250702/Level3_HPX_DAA_20250702_1005.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/PAH/20250702/Level3_PAH_DAA_20250702_1015.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/PAH/20250702/Level3_PAH_DAA_20250702_1024.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/HPX/20250702/Level3_HPX_DAA_20250702_1020.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/NQA/20250702/Level3_NQA_DAA_20250702_1008.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/NQA/20250702/Level3_NQA_DAA_20250702_1016.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/NQA/20250702/Level3_NQA_DAA_20250702_1022.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/OHX/20250702/Level3_OHX_DAA_20250702_1011.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/OHX/20250702/Level3_OHX_DAA_20250702_1018.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/OHX/20250702/Level3_OHX_DAA_20250702_1025.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/RAX/20250702/Level3_RAX_DAA_20250702_1019.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/LTX/20250702/Level3_LTX_N0C_20250702_1029.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/AKQ/20250702/Level3_AKQ_N0C_20250702_1030.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/LWX/20250702/Level3_LWX_N0C_20250702_1020.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/CCX/20250702/Level3_CCX_DAA_20250702_1024.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/DOX/20250702/Level3_DOX_DAA_20250702_0822.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/ENX/20250702/Level3_ENX_DAA_20250702_1016.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/BGM/20250702/Level3_BGM_N0C_20250702_1028.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/BUF/20250702/Level3_BUF_DAA_20250702_1007.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/TYX/20250702/Level3_TYX_DAA_20250702_1022.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/BUF/20250702/Level3_BUF_DAA_20250702_1024.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/BUF/20250702/Level3_BUF_DAA_20250702_1015.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/TYX/20250702/Level3_TYX_DAA_20250702_1008.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/TYX/20250702/Level3_TYX_DAA_20250702_1015.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/CXX/20250702/Level3_CXX_DAA_20250702_1015.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/CXX/20250702/Level3_CXX_DAA_20250702_1022.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/CXX/20250702/Level3_CXX_DAA_20250702_1008.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/CXX/20250702/Level3_CXX_N0C_20250702_1029.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/CXX/20250702/Level3_CXX_N0C_20250702_1022.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/MQT/20250702/Level3_MQT_DAA_20250702_1007.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/MQT/20250702/Level3_MQT_DAA_20250702_1014.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/MQT/20250702/Level3_MQT_DAA_20250702_1021.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/MQT/20250702/Level3_MQT_N0C_20250702_1014.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/APX/20250702/Level3_APX_DAA_20250702_1010.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/APX/20250702/Level3_APX_DAA_20250702_1017.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/APX/20250702/Level3_APX_DAA_20250702_1023.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/DTX/20250702/Level3_DTX_DAA_20250702_1015.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/DTX/20250702/Level3_DTX_DAA_20250702_1009.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/DTX/20250702/Level3_DTX_DAA_20250702_1022.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GRR/20250702/Level3_GRR_DAA_20250702_1004.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GRR/20250702/Level3_GRR_DAA_20250702_1013.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GRR/20250702/Level3_GRR_DAA_20250702_1021.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/IWX/20250702/Level3_IWX_DAA_20250702_1010.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/VWX/20250702/Level3_VWX_DAA_20250702_1013.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/IWX/20250702/Level3_IWX_DAA_20250702_1017.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/IWX/20250702/Level3_IWX_DAA_20250702_1024.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/VWX/20250702/Level3_VWX_DAA_20250702_1020.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/VWX/20250702/Level3_VWX_DAA_20250702_1027.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/IND/20250702/Level3_IND_DAA_20250702_1009.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/LOT/20250702/Level3_LOT_DAA_20250702_1022.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/IND/20250702/Level3_IND_DAA_20250702_1016.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/LOT/20250702/Level3_LOT_DAA_20250702_1008.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/LOT/20250702/Level3_LOT_DAA_20250702_1015.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/ILX/20250702/Level3_ILX_DAA_20250702_1019.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/ILX/20250702/Level3_ILX_DAA_20250702_1005.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/ILX/20250702/Level3_ILX_DAA_20250702_1012.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/IND/20250702/Level3_IND_DAA_20250702_1023.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/DVN/20250702/Level3_DVN_DAA_20250702_1016.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/DVN/20250702/Level3_DVN_DAA_20250702_1023.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/DVN/20250702/Level3_DVN_DAA_20250702_1027.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/ARX/20250702/Level3_ARX_DAA_20250702_1013.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/ARX/20250702/Level3_ARX_DAA_20250702_1027.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/ARX/20250702/Level3_ARX_DAA_20250702_1020.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/MKX/20250702/Level3_MKX_DAA_20250702_1027.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/MKX/20250702/Level3_MKX_DAA_20250702_1020.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/MKX/20250702/Level3_MKX_DAA_20250702_1013.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GRB/20250702/Level3_GRB_DAA_20250702_1011.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GRB/20250702/Level3_GRB_DAA_20250702_1018.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GRB/20250702/Level3_GRB_DAA_20250702_1025.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/DLH/20250702/Level3_DLH_DAA_20250702_1020.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/BIS/20250702/Level3_BIS_N0C_20250702_1021.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/BIS/20250702/Level3_BIS_N0C_20250702_1028.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/MBX/20250702/Level3_MBX_N0C_20250702_1012.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GLD/20250702/Level3_GLD_DAA_20250702_1016.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GLD/20250702/Level3_GLD_DAA_20250702_1010.nids: 
+[ASYNC LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/DAA/GLD/20250702/Level3_GLD_DAA_20250702_1023.nids: 
+[ASYNC LEVEL3 ERROR] Failed to download https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0C/OAX/20250702/Level3_OAX_N0C_20250702_1028.nids: 
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1711.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1716.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1720.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1725.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1729.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1734.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1739.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1743.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1748.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1753.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1758.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1802.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1807.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1812.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1711.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1716.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1720.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1725.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1729.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1734.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1739.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1743.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1748.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1753.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1758.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1802.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1807.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1812.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1711.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1716.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1720.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1725.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1729.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1734.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1739.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1743.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1748.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1753.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1758.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1802.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1807.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1812.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1711.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1716.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1720.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1725.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1729.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1734.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1739.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1743.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1748.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1753.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1758.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1802.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1807.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1812.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1711.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1716.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1720.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1725.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1729.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1734.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1739.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1743.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1748.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1753.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1758.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1802.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1807.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1812.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1711.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1716.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1720.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1725.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1729.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1734.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1739.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1743.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1748.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1753.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1758.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1802.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1807.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1812.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1716.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1720.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1725.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1729.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1734.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1739.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1743.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1748.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1753.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1758.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1802.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1807.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1812.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1816.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1716.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1720.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1725.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1729.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1734.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1739.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1743.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1748.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1753.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1758.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1802.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1807.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1812.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1816.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1716.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1720.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1725.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1729.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1734.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1739.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1743.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1748.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1753.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1758.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1802.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1807.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1812.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1816.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1716.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1720.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1725.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1729.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1734.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1739.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1743.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1748.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1753.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1758.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1802.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1807.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1812.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1816.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1716.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1720.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1725.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1729.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1734.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1739.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1743.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1748.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1753.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1758.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1802.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1807.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1812.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NVL/TLX/20250702/Level3_TLX_NVL_20250702_1816.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1716.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1720.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1725.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1729.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1734.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1739.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1743.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1748.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1753.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1758.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1802.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1807.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1812.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250702/Level3_TLX_NMD_20250702_1816.nids: Level3 product with code 141 is not supported
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=NTV, product_name=Tornado Vortex Signature (NTV)
+[DEBUG] load_recent_level3_frames: Using product_code=NSS, product_name=Storm Structure (NSS)
+[DEBUG] load_recent_level3_frames: Using product_code=NMD, product_name=Mesocyclone Detection (NMD)
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250703/Level3_TLX_NMD_20250703_0114.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250703/Level3_TLX_NMD_20250703_0118.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250703/Level3_TLX_NMD_20250703_0122.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250703/Level3_TLX_NMD_20250703_0125.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250703/Level3_TLX_NMD_20250703_0129.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250703/Level3_TLX_NMD_20250703_0133.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250703/Level3_TLX_NMD_20250703_0136.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250703/Level3_TLX_NMD_20250703_0141.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250703/Level3_TLX_NMD_20250703_0144.nids: Level3 product with code 30938 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250703/Level3_TLX_NMD_20250703_0148.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250703/Level3_TLX_NMD_20250703_0152.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250703/Level3_TLX_NMD_20250703_0156.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250703/Level3_TLX_NMD_20250703_0159.nids: Level3 product with code 141 is not supported
+[LEVEL3 ERROR] Failed to process Level 3 file https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/NMD/TLX/20250703/Level3_TLX_NMD_20250703_0203.nids: Level3 product with code 141 is not supported
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+
+--- Crash Report: 2025-07-02T21:52:43.652231 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1707, in <module>
+    window = MainWindow()
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 481, in __init__
+    self.init_ui()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 798, in init_ui
+    self.palette_selector.setToolTip("Select radar color palette")
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'palette_selector'. Did you mean: 'update_palette_selector'?
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+
+--- Crash Report: 2025-07-02T23:56:40.324030 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 195, in upload_pal_file
+    self.parent.register_custom_palette(path)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 580, in register_custom_palette
+    idx = self.palette_selector.findText(name)
+          ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'palette_selector'
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=NSW, product_name=Spectrum Width (NSW)
+[DEBUG] load_recent_level3_frames: Using product_code=N0X, product_name=Differential Reflectivity (N0X)
+[DEBUG] load_recent_level3_frames: Using product_code=NET, product_name=Echo Tops (NET)
+[DEBUG] load_recent_level3_frames: Using product_code=NML, product_name=Mid-Layer Composite (NML)
+[DEBUG] load_recent_level3_frames: Using product_code=DTA, product_name=Storm Total Accum (DTA)
+[DEBUG] load_recent_level3_frames: Using product_code=DVL, product_name=High-Res VIL (DVL)
+[DEBUG] load_recent_level3_frames: Using product_code=N0C, product_name=Correlation Coefficient (N0C)
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0B/TLX/20250703/Level3_TLX_N0B_20250703_0500.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0B/TLX/20250703/Level3_TLX_N0B_20250703_0504.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0B/TLX/20250703/Level3_TLX_N0B_20250703_0507.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0B/TLX/20250703/Level3_TLX_N0B_20250703_0511.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0B/TLX/20250703/Level3_TLX_N0B_20250703_0515.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0B/TLX/20250703/Level3_TLX_N0B_20250703_0518.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0B/TLX/20250703/Level3_TLX_N0B_20250703_0522.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0B/TLX/20250703/Level3_TLX_N0B_20250703_0504.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0B/TLX/20250703/Level3_TLX_N0B_20250703_0507.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0B/TLX/20250703/Level3_TLX_N0B_20250703_0511.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0B/TLX/20250703/Level3_TLX_N0B_20250703_0515.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0B/TLX/20250703/Level3_TLX_N0B_20250703_0518.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0B/TLX/20250703/Level3_TLX_N0B_20250703_0522.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0B/TLX/20250703/Level3_TLX_N0B_20250703_0525.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0G/TLX/20250703/Level3_TLX_N0G_20250703_0504.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0G/TLX/20250703/Level3_TLX_N0G_20250703_0507.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0G/TLX/20250703/Level3_TLX_N0G_20250703_0511.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0G/TLX/20250703/Level3_TLX_N0G_20250703_0515.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0G/TLX/20250703/Level3_TLX_N0G_20250703_0518.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0G/TLX/20250703/Level3_TLX_N0G_20250703_0522.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[LEVEL3 ERROR] Failed to render PNG for https://thredds.ucar.edu/thredds/fileServer/nexrad/level3/N0G/TLX/20250703/Level3_TLX_N0G_20250703_0525.nids: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[RENDER ERROR] Failed to render radar PNG: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 921, in _render_radar_png_from_obj
+    display.plot(
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 135, in plot
+    self.plot_ppi(field, sweep, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 365, in plot_ppi
+    pm = ax.pcolormesh(
+         ^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 6531, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 2390, in __init__
+    Collection.__init__(self, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 209, in __init__
+    self._internal_update(kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1233, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1206, in _update_props
+    raise AttributeError(
+AttributeError: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+
+[RENDER ERROR] Failed to render radar PNG: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 921, in _render_radar_png_from_obj
+    display.plot(
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 135, in plot
+    self.plot_ppi(field, sweep, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 365, in plot_ppi
+    pm = ax.pcolormesh(
+         ^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 6531, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 2390, in __init__
+    Collection.__init__(self, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 209, in __init__
+    self._internal_update(kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1233, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1206, in _update_props
+    raise AttributeError(
+AttributeError: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+
+[RENDER ERROR] Failed to render radar PNG: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 921, in _render_radar_png_from_obj
+    display.plot(
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 135, in plot
+    self.plot_ppi(field, sweep, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 365, in plot_ppi
+    pm = ax.pcolormesh(
+         ^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 6531, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 2390, in __init__
+    Collection.__init__(self, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 209, in __init__
+    self._internal_update(kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1233, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1206, in _update_props
+    raise AttributeError(
+AttributeError: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+
+[RENDER ERROR] Failed to render radar PNG: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 921, in _render_radar_png_from_obj
+    display.plot(
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 135, in plot
+    self.plot_ppi(field, sweep, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 365, in plot_ppi
+    pm = ax.pcolormesh(
+         ^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 6531, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 2390, in __init__
+    Collection.__init__(self, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 209, in __init__
+    self._internal_update(kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1233, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1206, in _update_props
+    raise AttributeError(
+AttributeError: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+
+[RENDER ERROR] Failed to render radar PNG: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 921, in _render_radar_png_from_obj
+    display.plot(
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 135, in plot
+    self.plot_ppi(field, sweep, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 365, in plot_ppi
+    pm = ax.pcolormesh(
+         ^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 6531, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 2390, in __init__
+    Collection.__init__(self, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 209, in __init__
+    self._internal_update(kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1233, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1206, in _update_props
+    raise AttributeError(
+AttributeError: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+
+[RENDER ERROR] Failed to render radar PNG: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 921, in _render_radar_png_from_obj
+    display.plot(
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 135, in plot
+    self.plot_ppi(field, sweep, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 365, in plot_ppi
+    pm = ax.pcolormesh(
+         ^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 6531, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 2390, in __init__
+    Collection.__init__(self, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 209, in __init__
+    self._internal_update(kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1233, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1206, in _update_props
+    raise AttributeError(
+AttributeError: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+
+[RENDER ERROR] Failed to render radar PNG: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 921, in _render_radar_png_from_obj
+    display.plot(
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 135, in plot
+    self.plot_ppi(field, sweep, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 365, in plot_ppi
+    pm = ax.pcolormesh(
+         ^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 6531, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 2390, in __init__
+    Collection.__init__(self, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 209, in __init__
+    self._internal_update(kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1233, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1206, in _update_props
+    raise AttributeError(
+AttributeError: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+
+[RENDER ERROR] Failed to render radar PNG: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 921, in _render_radar_png_from_obj
+    display.plot(
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 135, in plot
+    self.plot_ppi(field, sweep, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 365, in plot_ppi
+    pm = ax.pcolormesh(
+         ^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 6531, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 2390, in __init__
+    Collection.__init__(self, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 209, in __init__
+    self._internal_update(kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1233, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1206, in _update_props
+    raise AttributeError(
+AttributeError: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+
+--- Crash Report: 2025-07-03T01:02:52.955758 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 509, in _start_initial_load
+    idx = self.product_selector.findText("Super-Res Reflectivity (N0B)")
+          ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'product_selector'
+
+--- Crash Report: 2025-07-03T01:03:59.059244 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 514, in _start_initial_load
+    self.load_recent_level3_frames(site_id=self.current_site, frame_count=self.settings.get('animation_frames', 14), product_code="N0B", product_name="Super-Res Reflectivity (N0B)")
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1272, in load_recent_level3_frames
+    self.status.showMessage(f"Loading Level 3 radar data for {site_id}...")
+    ^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'status'
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+
+--- Crash Report: 2025-07-03T01:04:59.748440 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 518, in _start_initial_load
+    self.load_recent_level3_frames(site_id=self.current_site, frame_count=self.settings.get('animation_frames', 14), product_code="N0B", product_name="Super-Res Reflectivity (N0B)")
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1334, in load_recent_level3_frames
+    self.frame_slider.setEnabled(False)
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'frame_slider'
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+
+--- Crash Report: 2025-07-03T01:06:01.638982 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 528, in _start_initial_load
+    self.load_recent_level3_frames(site_id=self.current_site, frame_count=self.settings.get('animation_frames', 14), product_code="N0B", product_name="Super-Res Reflectivity (N0B)")
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1480, in load_recent_level3_frames
+    self.update_canvas()
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1586, in update_canvas
+    if self.radar_map and self.radar_map.page() is not None:
+       ^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'radar_map'
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[RENDER ERROR] Failed to render radar PNG: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 922, in _render_radar_png_from_obj
+    display.plot(
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 135, in plot
+    self.plot_ppi(field, sweep, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 365, in plot_ppi
+    pm = ax.pcolormesh(
+         ^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 6531, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 2390, in __init__
+    Collection.__init__(self, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 209, in __init__
+    self._internal_update(kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1233, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1206, in _update_props
+    raise AttributeError(
+AttributeError: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+
+[RENDER ERROR] Failed to render radar PNG: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 922, in _render_radar_png_from_obj
+    display.plot(
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 135, in plot
+    self.plot_ppi(field, sweep, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 365, in plot_ppi
+    pm = ax.pcolormesh(
+         ^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 6531, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 2390, in __init__
+    Collection.__init__(self, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 209, in __init__
+    self._internal_update(kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1233, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1206, in _update_props
+    raise AttributeError(
+AttributeError: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+
+[RENDER ERROR] Failed to render radar PNG: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 922, in _render_radar_png_from_obj
+    display.plot(
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 135, in plot
+    self.plot_ppi(field, sweep, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 365, in plot_ppi
+    pm = ax.pcolormesh(
+         ^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 6531, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 2390, in __init__
+    Collection.__init__(self, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 209, in __init__
+    self._internal_update(kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1233, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1206, in _update_props
+    raise AttributeError(
+AttributeError: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+
+[RENDER ERROR] Failed to render radar PNG: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 922, in _render_radar_png_from_obj
+    display.plot(
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 135, in plot
+    self.plot_ppi(field, sweep, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 365, in plot_ppi
+    pm = ax.pcolormesh(
+         ^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 6531, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 2390, in __init__
+    Collection.__init__(self, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 209, in __init__
+    self._internal_update(kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1233, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1206, in _update_props
+    raise AttributeError(
+AttributeError: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+
+[RENDER ERROR] Failed to render radar PNG: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 922, in _render_radar_png_from_obj
+    display.plot(
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 135, in plot
+    self.plot_ppi(field, sweep, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 365, in plot_ppi
+    pm = ax.pcolormesh(
+         ^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 6531, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 2390, in __init__
+    Collection.__init__(self, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 209, in __init__
+    self._internal_update(kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1233, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1206, in _update_props
+    raise AttributeError(
+AttributeError: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+
+[RENDER ERROR] Failed to render radar PNG: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 922, in _render_radar_png_from_obj
+    display.plot(
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 135, in plot
+    self.plot_ppi(field, sweep, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 365, in plot_ppi
+    pm = ax.pcolormesh(
+         ^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 6531, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 2390, in __init__
+    Collection.__init__(self, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 209, in __init__
+    self._internal_update(kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1233, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1206, in _update_props
+    raise AttributeError(
+AttributeError: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+
+[RENDER ERROR] Failed to render radar PNG: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 922, in _render_radar_png_from_obj
+    display.plot(
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 135, in plot
+    self.plot_ppi(field, sweep, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\pyart\graph\radardisplay.py", line 365, in plot_ppi
+    pm = ax.pcolormesh(
+         ^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 6531, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 2390, in __init__
+    Collection.__init__(self, **kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\collections.py", line 209, in __init__
+    self._internal_update(kwargs)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1233, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\.venv\Lib\site-packages\matplotlib\artist.py", line 1206, in _update_props
+    raise AttributeError(
+AttributeError: QuadMesh.set() got an unexpected keyword argument 'interpolation'
+
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0G, product_name=Super-Res Velocity (N0G)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+
+--- Crash Report: 2025-07-03T02:01:58.134500 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1879, in <module>
+    window = MainWindow()
+             ^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 530, in __init__
+    self.s3_poll_timer = QTimer()
+                         ^^^^^^
+UnboundLocalError: cannot access local variable 'QTimer' where it is not associated with a value
+
+--- Crash Report: 2025-07-03T02:03:40.379432 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1879, in <module>
+    window = MainWindow()
+             ^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 530, in __init__
+    self.s3_poll_timer = QTimer()
+                         ^^^^^^
+UnboundLocalError: cannot access local variable 'QTimer' where it is not associated with a value
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+
+--- Crash Report: 2025-07-03T02:41:27.931567 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1154, in resizeEvent
+    self._on_resize_event(event)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1158, in _on_resize_event
+    self.update_colorbar()
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1227, in update_colorbar
+    self.colorbar_label.setPixmap(pixmap)
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'colorbar_label'
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+
+--- Crash Report: 2025-07-03T02:45:24.794527 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 2002, in <module>
+    window = MainWindow()
+             ^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 603, in __init__
+    self.selected_sites = [self.current_site]
+                           ^^^^^^^^^^^^^^^^^
+RuntimeError: super-class __init__() of type MainWindow was never called
+
+--- Crash Report: 2025-07-03T02:46:32.196529 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 2002, in <module>
+    window = MainWindow()
+             ^^^^^^^^^^^^
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 647, in __init__
+    self.init_ui()
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 810, in init_ui
+    top_layout.addWidget(self.five_site_btn)
+    ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'top_layout' where it is not associated with a value
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+
+--- Crash Report: 2025-07-03T02:49:36.111536 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 662, in _start_initial_load
+    self.load_recent_level3_frames(site_id=self.current_site, frame_count=self.settings.get('animation_frames', 14), product_code="N0B", product_name="Super-Res Reflectivity (N0B)")
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1583, in load_recent_level3_frames
+    for url, t in all_found_urls_with_times:
+        ^^^^^^
+ValueError: too many values to unpack (expected 2)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+
+--- Crash Report: 2025-07-03T02:50:16.697992 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 505, in on_ok
+    self.load_recent_level3_frames(site_id=None, frame_count=self.settings.get('animation_frames', 14), product_code=self.current_product_code, product_name=self.current_product_name)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1583, in load_recent_level3_frames
+    for url, t in all_found_urls_with_times:
+        ^^^^^^
+ValueError: too many values to unpack (expected 2)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+
+--- Crash Report: 2025-07-03T02:52:30.773142 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 813, in on_five_site_toggle
+    self.enable_five_site_mode(checked)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 469, in enable_five_site_mode
+    self.load_recent_level3_frames(site_id=self.current_site, frame_count=self.settings.get('animation_frames', 14), product_code=self.current_product_code, product_name=self.current_product_name)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1583, in load_recent_level3_frames
+    # all_found_urls_with_times now contains (url, t, site_id)
+        ^^^^^^
+ValueError: too many values to unpack (expected 2)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+
+--- Crash Report: 2025-07-03T02:52:56.713434 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1414, in on_item_clicked
+    self.on_site_change(site_id)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1251, in on_site_change
+    self.load_recent_level3_frames(site_id=site_id, frame_count=self.settings.get('animation_frames', 14), product_code=self.current_product_code, product_name=self.current_product_name)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1583, in load_recent_level3_frames
+    # all_found_urls_with_times now contains (url, t, site_id)
+        ^^^^^^
+ValueError: too many values to unpack (expected 2)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+
+--- Crash Report: 2025-07-03T02:53:01.740154 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1414, in on_item_clicked
+    self.on_site_change(site_id)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1251, in on_site_change
+    self.load_recent_level3_frames(site_id=site_id, frame_count=self.settings.get('animation_frames', 14), product_code=self.current_product_code, product_name=self.current_product_name)
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1583, in load_recent_level3_frames
+    # all_found_urls_with_times now contains (url, t, site_id)
+        ^^^^^^
+ValueError: too many values to unpack (expected 2)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+
+--- Crash Report: 2025-07-03T05:20:26.848971 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1124, in on_polygons_checkbox_toggled
+    top_layout.addWidget(self.data_model_selector)
+    ^^^^^^^^^^
+NameError: name 'top_layout' is not defined
+
+--- Crash Report: 2025-07-03T05:20:46.261961 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1124, in on_polygons_checkbox_toggled
+    top_layout.addWidget(self.data_model_selector)
+    ^^^^^^^^^^
+NameError: name 'top_layout' is not defined
+
+--- Crash Report: 2025-07-03T05:20:52.454658 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1124, in on_polygons_checkbox_toggled
+    top_layout.addWidget(self.data_model_selector)
+    ^^^^^^^^^^
+NameError: name 'top_layout' is not defined
+
+--- Crash Report: 2025-07-03T05:20:55.540989 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1124, in on_polygons_checkbox_toggled
+    top_layout.addWidget(self.data_model_selector)
+    ^^^^^^^^^^
+NameError: name 'top_layout' is not defined
+
+--- Crash Report: 2025-07-03T05:20:58.373841 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1124, in on_polygons_checkbox_toggled
+    top_layout.addWidget(self.data_model_selector)
+    ^^^^^^^^^^
+NameError: name 'top_layout' is not defined
+
+--- Crash Report: 2025-07-03T05:21:08.931952 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1124, in on_polygons_checkbox_toggled
+    top_layout.addWidget(self.data_model_selector)
+    ^^^^^^^^^^
+NameError: name 'top_layout' is not defined
+
+--- Crash Report: 2025-07-03T05:21:12.018402 ---
+Traceback (most recent call last):
+  File "C:\Users\Tanner Davidson\Desktop\OVR-NEXRAD\radar_viewer.py", line 1124, in on_polygons_checkbox_toggled
+    top_layout.addWidget(self.data_model_selector)
+    ^^^^^^^^^^
+NameError: name 'top_layout' is not defined
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)
+[DEBUG] load_recent_level3_frames: Using product_code=N0B, product_name=Super-Res Reflectivity (N0B)

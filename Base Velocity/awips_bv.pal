@@ -1,0 +1,48 @@
+;
+; Default base velocity palette
+;
+Product: BV
+Units: KTS
+Step:  10
+Scale:   1.9426     ; converts internal units (M/S) to KTS
+
+ND: 64 64 64 
+RF: 64 0 64 
+
+;  The Color statements above produce a palette equivalent to the
+;   statements below. The axis labels start at the minimum value
+;   from the Color: statements and progress in Step: increments
+;   to the maximum value from the Color: statements.
+;
+;
+ Color:  140    0 255  255
+ Color:  130    0 255  224
+ Color:  120    0 255  192
+ Color:  110    0 255  160
+ Color:  100    0 255  128
+ Color:  90    0 255   96
+ Color:  80    0 255   64
+ Color:  70    0 255   0
+ Color:  60    0 224   0
+ Color:  50    0 192   0
+ Color:  40    0 160   0
+ Color:  30    0 128   0
+ Color:  20    0  96   0
+ Color:  10    0  64   0 
+ Color:    0  210 210 210
+ Color:   -10   64   0   0
+ Color:   -20   96   0   0
+ Color:   -30  128   0   0
+ Color:   -40  160   0   0
+ Color:   -50  192   0   0
+ Color:   -60  224   0   0
+ Color:   -70  255   0   0
+ Color:   -80  255   64   0
+ Color:   -90  255   96  0
+ Color:   -100  255  128   0
+ Color:   -110  255  160   0
+ Color:   -120  255  192   0
+ Color:   -130  255  224   0
+ Color:   -140  255  255   0
+
+

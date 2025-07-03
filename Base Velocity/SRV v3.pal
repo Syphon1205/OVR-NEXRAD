@@ -1,0 +1,18 @@
+product: SRV
+units: MPH
+step: 20
+scale: 2.237
+
+color: 130 0 0 0
+color: 90 164 100 68
+color: 65 255 255 0
+color: 58 255 175 55
+color: 50 255 55 26
+color: 10 33 0 0
+color: 0 110 110 110
+color: -10 5 33 0
+color: -50 82 247 89
+color: -58 71 255 255
+color: -70 0 0 255
+color: -90 0 0 0
+color: -130 255 100 255

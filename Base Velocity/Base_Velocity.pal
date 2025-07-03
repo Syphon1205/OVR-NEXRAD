@@ -1,0 +1,25 @@
+;=================================================
+; Placefile Nation
+; GR3/GR2A v2.x BV Velocity Color Curve
+; https://www.placefilenation.com
+;=================================================
+Product: BV
+8bit Velocity (V) color table
+Units: KTS
+Scale: 1.9426
+Step:  5
+
+Color4:  100  255  255  100   255
+Color4:  80   255  255    0   255
+Color4:  60   240  120    0   255
+Color4:  50   255  180  180   255
+Color4:  35   255    0    0   255
+Color4:  15    70    0    0   255
+Color4:   0   180  180  180   255
+Color4: -15     0   70    0   255
+Color4: -35     0  255    0   255
+Color4: -50   180  255  180   255
+Color4: -60     0  180  255   255
+Color4: -80     0    0  100   255
+Color4: -100  230    0  180   255
+RF:  64  0  64

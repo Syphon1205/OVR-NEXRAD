@@ -1,0 +1,43 @@
+;
+; GRLevel2 Color Table  
+; Velocity
+; This is the 8-bit color table often used by the RAH staff for VELOCITY.
+product: BV
+Units: KTS
+Step:  10
+
+RF: 64 0 64
+
+
+
+
+
+Color:   100  255  201    2
+Color:   90   255  146    1
+Color:   80   255  114    0
+Color:   70   254  163  255
+Color:   60   253  125  255
+Color:   50   255   34  175
+Color:   40   255    0    0 
+Color:   35   222    0    0
+Color:   30   199    0    0
+Color:   25   181    0    0
+Color:   20   167    0    0
+Color:   15   144    0    0
+Color:   10   116    0    0
+Color:     5  120   32   36
+Color:     0  220  220  220
+Color:    -5   70  113   69
+Color:   -10   26   99   26
+Color:   -15   14  133   14
+Color:   -20   11  164   11
+Color:   -25    8  199    8
+Color:   -30    7  210    7
+Color:   -35    4  240    4
+Color:   -40   92  255  116
+Color:   -50  166  255  210
+Color:   -60    3  255  221
+Color:   -70    3  195  242
+Color:   -80   18    0  159  
+Color:   -90   147  0    144
+Color:   -100  236  0    240

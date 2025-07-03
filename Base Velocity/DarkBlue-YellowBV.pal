@@ -1,0 +1,19 @@
+Product: BV
+Units:   KTS
+Step:    5
+Scale:   1.9426
+
+RF: 255 40 255
+ND: 200 200 200
+
+color:   90 0 0 255
+color:   70 190 190 255
+color:   50 0 255 255
+color:   30 50 200 150
+color:   10 15 150 0
+color:    0 133 128 134
+color:  -10 150 150 0
+color:  -30 160 60 0
+color:  -50 210 110 40
+color:  -70 200 200 0
+color:  -90 255 255 0

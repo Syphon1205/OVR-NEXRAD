@@ -1,0 +1,19 @@
+;
+; Almany Designs velocity color table
+;
+
+product: BV
+units: KTS
+step: 10 
+scale: 1.9426
+
+color: -120 108 92 205 237 235 249
+color: -50 0 225 0
+color: -10 0 77 0
+color: 0 152 152 152
+color: 10 77 19 0 255 0 0 
+color: 50 255 255 0 
+color: 120 255 139 26
+
+
+
