@@ -14,7 +14,7 @@ A PyQt5 NEXRAD Viewer for Windows and MacOS. (Linux Soon)
 
 ### Windows
 
-1. Download the latest release or build from the Releases Tab in Guthub.
+1. Download the latest release or build from the Releases Tab in Github.
 
 #### Optional: Windows Installer (Not Supported Yet)
 
@@ -23,7 +23,7 @@ If using the WiX installer:
 
 ### MacOS
 
-1. Download the latest release or build from the Releases Tab in Guthub.
+1. Download the latest release or build from the Releases Tab in Github.
 
 ## MapTiler API Key
 
