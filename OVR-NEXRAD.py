@@ -1,5 +1,13 @@
-import os
 import sys
+import os
+import io
+import json
+import base64
+import traceback
+import subprocess
+import socket
+import threading
+
 if getattr(sys, 'frozen', False):
     # If running as a frozen exe, add the exe directory to PATH
     exe_dir = os.path.dirname(sys.executable)
@@ -9,15 +17,11 @@ import asyncio
 import aiohttp
 import requests
 import tempfile
-import json
-import glob
-import base64
 import numpy as np
 import matplotlib.pyplot as plt
 import xml.etree.ElementTree as ET
 import pyart
 import re
-import io
 from datetime import datetime, timedelta, timezone
 from shapely.geometry import shape
 import csv
@@ -459,6 +463,27 @@ class Level3LoaderWorker(QObject):
 
 # --- Main Application Window ---
 class MainWindow(QMainWindow):
+    def _start_local_http_server(self, port=8000):
+        """
+        Start a local HTTP server in a background thread to serve the assets directory.
+        This is required to avoid CORS issues when loading radar_map.html and using MapTiler.
+        """
+        import threading
+        import http.server
+        import socketserver
+        import os
+
+        assets_dir = os.path.join(os.getcwd(), 'assets')
+        handler = http.server.SimpleHTTPRequestHandler
+        # Change working directory only for the server thread
+        def server_thread():
+            os.chdir(assets_dir)
+            with socketserver.TCPServer(("127.0.0.1", port), handler) as httpd:
+                print(f"[HTTP SERVER] Serving assets at http://127.0.0.1:{port}/")
+                httpd.serve_forever()
+        t = threading.Thread(target=server_thread, daemon=True)
+        t.start()
+
     def on_spotter_reports_checkbox_toggled(self, state):
         # Toggle Spotter Reports overlay in JS
         checked = state == 2  # Qt.Checked == 2
@@ -1064,10 +1089,9 @@ class MainWindow(QMainWindow):
         self.channel = QWebChannel()
         self.js_bridge = JSBridge(self)
         self.channel.registerObject('backend', self.js_bridge)  # Use 'backend' for JS
-        html_path = os.path.abspath(os.path.join("assets", "radar_map.html"))
-        with open(html_path, 'r', encoding='utf-8') as f:
-            html_content = f.read()
-        self.radar_map.setHtml(html_content, QUrl.fromLocalFile(html_path))
+        # Serve radar_map.html via local HTTP server to avoid CORS issues
+        map_url = QUrl('http://localhost:8000/radar_map.html')
+        self.radar_map.load(map_url)
         self.radar_map.loadFinished.connect(self.on_map_load_finished)
         main_layout.addWidget(self.radar_map, stretch=1)
         self.setCentralWidget(main_widget)
@@ -1515,6 +1539,7 @@ class MainWindow(QMainWindow):
             vmin, vmax = None, None
             if field_name:
                 data = radar.fields[field_name]['data']
+               
                 vmin = float(np.nanmin(data))
                 vmax = float(np.nanmax(data))
             cmap_to_use = None
@@ -1571,8 +1596,7 @@ class MainWindow(QMainWindow):
             if len(self.radar_frames) > frame_count:
                 self.radar_frames = self.radar_frames[-frame_count:]
             self.frame_index = len(self.radar_frames) - 1
-            self.frame_slider.setMaximum(max(0, len(self.radar_frames)-1))
-            self.frame_slider.setValue(self.frame_index)
+            self.s3_poll_timer.start(self.settings.get('polygon_refresh', 60000))  # reset timer
             self.status.showMessage(f"New sweep loaded for {site_id} {product_name}.", 5000)
             if not self.anim_timer.isActive():
                 self.update_canvas()
@@ -1790,7 +1814,6 @@ class MainWindow(QMainWindow):
                         f.write(chunk)
                 radar = pyart.io.read_nexrad_level3(temp_filepath)
                 field_name = list(radar.fields.keys())[0] if radar.fields else None
-                print(f"[DEBUG] {product_code} file {url} field_name: {field_name}")
                 vmin, vmax = None, None
                 if field_name:
                     data = radar.fields[field_name]['data']
